@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="canonical" href="" />
+
+    <meta
+      name="description"
+      content="Société de nettoyage partout au Maroc, spécialisée en multi-services : nettoyage, jardinage, hygiène 3D."
+    />
+    <meta
+      name="keywords"
+      content="nettoyage, jardinage, hygiène 3D, services de nettoyage au Maroc, entreprise de nettoyage Maroc"
+    />
+
+    <!--Social Media Display-->
+    <meta property="og:title" content="Société de Nettoyage au Maroc" />
+    <meta
+      property="og:description"
+      content="Une société multi-services avec une expertise en nettoyage, jardinage et hygiène 3D. Satisfaction client garantie."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="" />
+
+    <!--Favicons-->
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="favicon-32x32.png?v1"
+    />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+    <link rel="manifest" href="site.webmanifest" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/root.css" />
+    <link rel="stylesheet" href="./css/local.css" />
+    <link rel="stylesheet" href="./css/dark.css" />
+    <link rel="stylesheet" href="./css/dark-root-styles.css" />
+
+    <title>Société de Nettoyage au Maroc | Multi-services</title>
+  </head>
+  <body>
+    <a class="skip" aria-label="passer au contenu principal" href="#main"
+      >Passer au contenu principal</a
+    >
+
+    <header>
+      <!-- Barre de navigation mobile -->
+      <div class="mobile-wrapper">
+        <div class="mobile-nav container mobile-nav-container">
+          <img
+            style="height: 150px; width: 150px"
+            class="light"
+            id="mobile-logo"
+            src="./images/eagle_dark.png"
+            alt="logo_mobile_clinique"
+            width="110"
+            height="32"
+          />
+          <img
+            style="height: 150px; width: 150px"
+            class="dark"
+            id="mobile-logo"
+            src="./images/eagle_light.png"
+            alt="logo_mobile_clinique"
+            width="110"
+            height="32"
+          />
+          <button
+            aria-label="ouvrir le menu"
+            id="menu-button"
+            class="hamburger hamburger--spring"
+            onclick="toggleNav()"
+            type="button"
+          >
+            <span aria-hidden="true" class="hamburger-box">
+              <span aria-hidden="true" class="hamburger-inner"></span>
+            </span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Navigation -->
+      <nav>
+        <div class="navbar-menu">
+          <div id="side-menu" class="side-nav">
+            <a class="nav-logo" href="./index.html">
+              <img
+                style="height: 250px; width: 250px"
+                class="light"
+                src="images/eagle_dark.png"
+                alt="logo clinique"
+                height="80"
+              />
+              <img
+                style="height: 250px; width: 250px"
+                class="dark"
+                src="images/eagle_light.png"
+                alt="logo clinique"
+                height="80"
+              />
+            </a>
+            <ul id="on-top" class="navbar-links">
+              <li class="nav-li">
+                <a id="active-menu" href="index.html">Accueil</a>
+              </li>
+              <li class="nav-li">
+                <a class="link" href="./about.html">À propos</a>
+              </li>
+              <li class="nav-li">
+                <a class="link" href="index.html#services">Services</a>
+              </li>
+              <li class="nav-li">
+                <a class="link" href="./testimonials.html">Témoignages</a>
+              </li>
+              <li class="nav-li">
+                <a class="link" href="./contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+          <button
+            class="dark-mode-button top-dark-mode-button"
+            aria-label="basculer en mode sombre"
+          >
+            <img
+              class="moon"
+              src="./images/moon.svg"
+              alt=""
+              width="24"
+              height="24"
+            />
+            <img
+              class="sun"
+              src="./images/sun.svg"
+              alt=""
+              width="24"
+              height="24"
+            />
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <main id="main">
+      <!-- ============================================ -->
+      <!--                    LANDING                   -->
+      <!-- ============================================ -->
+
+      <section id="hero">
+        <div class="hero-content">
+          <div class="heroText">
+            <h1 id="home-h">
+              Votre partenaire en nettoyage et sécurité au Maroc
+            </h1>
+            <p>
+              Notre société, active sur tout le territoire marocain, fournit des
+              services de haute qualité en nettoyage, jardinage, hygiène 3D et
+              sécurité, tout en garantissant un rapport qualité-prix
+              exceptionnel.
+            </p>
+
+            <div class="buttons">
+              <a class="button-solid" href="./about.html"> À propos de nous </a>
+              <a class="call-now" href="tel:555-213-9120">
+                <img
+                  class="light"
+                  decoding="async"
+                  src="./images/phone.svg"
+                  alt=""
+                  aria-hidden="true"
+                  width="21"
+                  height="21"
+                />
+                <img
+                  class="dark"
+                  decoding="async"
+                  src="./images/phone-dark.svg"
+                  alt=""
+                  aria-hidden="true"
+                  width="21"
+                  height="21"
+                />
+                <div class="group">
+                  <span class="text">Appelez-nous</span>
+                  <span class="number">(555) 213-9120</span>
+                </div>
+              </a>
+            </div>
+          </div>
+          <img
+            decoding="async"
+            src="./images/secure.png"
+            alt=""
+            class="business-casual"
+            width=""
+            height=""
+          />
+        </div>
+      </section>
+
+      <!-- ============================================ -->
+      <!--                  Services                    -->
+      <!-- ============================================ -->
+
+      <section id="services" class="section">
+        <div class="service">
+          <h2>Nettoyage<span> complet</span></h2>
+          <p>
+            Nous assurons un nettoyage complet et adapté aux besoins de chaque
+            client, en respectant les consignes et les délais.
+          </p>
+          <a href="./contact.html" class="button-solid">Contactez-nous</a>
+        </div>
+        <div class="service">
+          <h2>Hygiène<span> 3D</span></h2>
+          <p>
+            Service spécialisé pour une hygiène parfaite de vos espaces avec des
+            techniques de désinfection modernes.
+          </p>
+          <a href="./contact.html" class="button-solid">Contactez-nous</a>
+        </div>
+        <div class="service">
+          <h2>Jardinage<span> professionnel</span></h2>
+          <p>
+            Entretien et aménagement de vos espaces verts pour un environnement
+            sain et agréable.
+          </p>
+          <a href="./contact.html" class="button-solid">Contactez-nous</a>
+        </div>
+        <div class="service">
+          <h2>Sécurité<span> renforcée</span></h2>
+          <p>
+            Nos agents de sécurité veillent au respect des consignes et assurent
+            la protection de vos biens grâce à leur formation et leur vigilance.
+          </p>
+          <a href="./contact.html" class="button-solid">Contactez-nous</a>
+        </div>
+      </section>
+
+      <!-- ============================================ -->
+      <!--                   About                      -->
+      <!-- ============================================ -->
+    </main>
+
+    <!-- ============================================ -->
+    <!--                     FOOTER                   -->
+    <!-- ============================================ -->
+
+    <footer id="footer">
+      <div class="container">
+        <div class="left-section">
+          <a class="logo" href="./index.html"
+            ><img
+              src="./images/eagle_light.png"
+              alt="logo clinique"
+              width="293"
+              height="91"
+          /></a>
+          <p>
+            Société multi-services avec une expertise en nettoyage et jardinage.
+            Notre objectif est la satisfaction totale de notre clientèle, avec
+            des prestations adaptées à vos besoins.
+          </p>
+        </div>
+        <div class="right-section">
+          <div class="lists">
+            <ul>
+              <li><h2>Entreprise</h2></li>
+              <li><a href="./index.html">Accueil</a></li>
+              <li><a href="./about.html">À Propos</a></li>
+              <li><a href="./contact.html">Services</a></li>
+            </ul>
+            <ul>
+              <li><h2>Support</h2></li>
+              <li><a href="./contact.html">Contactez-nous</a></li>
+            </ul>
+            <ul>
+              <li><h2>Contactez-nous</h2></li>
+              <li>
+                <img
+                  loading="lazy"
+                  decoding="async"
+                  src="./images/pin.svg"
+                  alt=""
+                  width="24"
+                  height="24"
+                /><a href="" target="_blank">Quelque part, Maroc</a>
+              </li>
+              <li>
+                <img
+                  loading="lazy"
+                  decoding="async"
+                  src="./images/footer-phone.svg"
+                  alt=""
+                  width="24"
+                  height="24"
+                /><a href="tel:555-213-9120">(555) 213-9120</a>
+              </li>
+              <li>
+                <img
+                  loading="lazy"
+                  decoding="async"
+                  src="./images/email.svg"
+                  alt=""
+                  width="24"
+                  height="24"
+                /><a href="mailto:info@email.com">info@email.com</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="buttons">
+            <a class="button-solid" href="./contact.html"> Contactez-nous </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      var ba = ["MSIE", "Trident", "Edge"];
+      var b,
+        ua = navigator.userAgent;
+      for (var i = 0; i < ba.length; i++) {
+        if (ua.indexOf(ba[i]) > -1) {
+          b = ba[i];
+          break;
+        }
+      }
+      if (b == "MSIE" || b == "Trident" || b == "Edge") {
+        b = "Internet Explorer";
+        alert(
+          "You are using the " +
+            b +
+            " browser and this browser is incompatible with this website and many others.  Please open this page in a different browser, either Chrome or Firefox.  Thank you!"
+        );
+      }
+    </script>
+
+    <script defer src="./app.js"></script>
+  </body>
+</html>

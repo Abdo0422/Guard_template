@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="canonical" href="">
+
+    <meta name="description" content="Société de nettoyage multi-services au Maroc, spécialisée dans le nettoyage, jardinage, et hygiène 3D.">
+    <meta name="keywords" content="nettoyage, jardinage, hygiène, services, Maroc">
+
+    <!--Social Media Display-->
+    <meta property="og:title" content="Société de Nettoyage Multi-Services au Maroc"/>
+    <meta property="og:description" content="Une entreprise de nettoyage de qualité à des prix compétitifs, garantissant la satisfaction totale de notre clientèle."/>
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content=""/>
+    <meta property="og:image" content=""/>
+    <meta property="og:image:secure_url" content=""/>
+
+    <!--Favicons-->
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png?v1">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+    <link rel="manifest" href="./site.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/root.css">
+    <link rel="stylesheet" href="./css/contact.css">
+    <link rel="stylesheet" href="./css/dark.css">
+    <link rel="stylesheet" href="./css/dark-root-styles.css">
+
+    <title>Société de Nettoyage Multi-Services au Maroc</title>
+</head>
+<body>
+
+    <a class="skip" aria-label="skip to main content" href="#main">Cliquez ici pour passer au contenu principal</a>
+
+   
+    <header>
+        <!-- Barre de navigation mobile -->
+        <div class="mobile-wrapper">
+          <div class="mobile-nav container mobile-nav-container">
+            <img
+              style="height: 150px; width: 150px"
+              class="light"
+              id="mobile-logo"
+              src="./images/eagle_dark.png"
+              alt="logo_mobile_clinique"
+              width="110"
+              height="32"
+            />
+            <img
+              style="height: 150px; width: 150px"
+              class="dark"
+              id="mobile-logo"
+              src="./images/eagle_light.png"
+              alt="logo_mobile_clinique"
+              width="110"
+              height="32"
+            />
+            <button
+              aria-label="ouvrir le menu"
+              id="menu-button"
+              class="hamburger hamburger--spring"
+              onclick="toggleNav()"
+              type="button"
+            >
+              <span aria-hidden="true" class="hamburger-box">
+                <span aria-hidden="true" class="hamburger-inner"></span>
+              </span>
+            </button>
+          </div>
+        </div>
+  
+        <!-- Navigation -->
+        <nav>
+          <div class="navbar-menu">
+            <div id="side-menu" class="side-nav">
+              <a class="nav-logo" href="./index.html">
+                <img
+                  style="height: 250px; width: 250px"
+                  class="light"
+                  src="images/eagle_dark.png"
+                  alt="logo clinique"
+                  height="80"
+                />
+                <img
+                  style="height: 250px; width: 250px"
+                  class="dark"
+                  src="images/eagle_light.png"
+                  alt="logo clinique"
+                  height="80"
+                />
+              </a>
+              <ul id="on-top" class="navbar-links">
+                <li class="nav-li">
+                  <a id="active-menu" href="index.html">Accueil</a>
+                </li>
+                <li class="nav-li">
+                  <a class="link" href="./about.html">À propos</a>
+                </li>
+                <li class="nav-li">
+                  <a class="link" href="index.html#services">Services</a>
+                </li>
+                <li class="nav-li">
+                  <a class="link" href="./testimonials.html">Témoignages</a>
+                </li>
+                <li class="nav-li">
+                  <a class="link" href="./contact.html">Contact</a>
+                </li>
+              </ul>
+            </div>
+            <button
+              class="dark-mode-button top-dark-mode-button"
+              aria-label="basculer en mode sombre"
+            >
+              <img
+                class="moon"
+                src="./images/moon.svg"
+                alt=""
+                width="24"
+                height="24"
+              />
+              <img
+                class="sun"
+                src="./images/sun.svg"
+                alt=""
+                width="24"
+                height="24"
+              />
+            </button>
+          </div>
+        </nav>
+      </header>
+        
+    <main id="main">
+    
+        <!-- ============================================ -->
+        <!--                    Landing                   -->
+        <!-- ============================================ -->
+    
+        <section id="int-hero">
+            <h1 id="home-h">Contactez-nous</h1>
+        </section>
+
+        <!-- ============================================ -->
+        <!--                    FORM                      -->
+        <!-- ============================================ -->
+
+        <section id="form">
+            <div class="left-section">
+                <span class="topper">Nom de l'entreprise</span>
+                <h2>Envoyer un message</h2>
+                <p>Si vous avez des questions ou des préoccupations, n'hésitez pas à nous contacter. Nous répondons à chaque appel et email.</p>
+                <form id="contact" name="Formulaire de Contact" method="post" data-netlify-recaptcha="true" data-netlify="true">
+                        <div class="input-group">
+                            <label for="name">Nom Complet</label>
+                            <input id="name" aria-label="name" class="input1" name="name" placeholder="Nom Complet" type="text" tabindex="1" required>
+                            <div aria-hidden="true" class="hover-box"></div>
+                        </div>
+
+                        <div class="input-group">
+                            <label for="email">Email</label>
+                            <input id="email" aria-label="email" class="input1 right" name="email" placeholder="Adresse Email" type="email" tabindex="2" required>
+                            <div aria-hidden="true" class="hover-box"></div>
+                        </div>
+
+                        <div class="input-group">
+                            <label for="phone">Téléphone</label>
+                            <input id="phone" aria-label="phone number" class="input1" name="phone" placeholder="Numéro de Téléphone" type="tel" tabindex="3" required>
+                            <div aria-hidden="true" class="hover-box"></div>
+                        </div>
+                        <div class="input-group">
+                            <label for="location">Localisation</label>
+                            <input id="location" aria-label="location" class="input1 right" name="location" placeholder="Votre Localisation" type="text" tabindex="4" required>
+                            <div aria-hidden="true" class="hover-box"></div>
+                        </div>
+                        <div class="input-group">
+                            <label for="how">Comment avez-vous entendu parler de nous</label>
+                            <input id="how" aria-label="how did you hear about us" name="hear" placeholder="Comment Avez-Vous Entendu Parler de Nous" type="text" tabindex="5" required>
+                            <div aria-hidden="true" class="hover-box"></div>
+                        </div>
+                        <div class="input-group textarea">
+                            <label for="message">Message</label>
+                            <textarea id="message" aria-label="write your message" name="message" placeholder="Parlez-nous de ce dont vous avez besoin" tabindex="6" required></textarea>
+                            <div aria-hidden="true" class="hover-box"></div>
+                        </div>
+                    <p class="form-submit">
+                        <button name="submit" type="submit" id="contact-submit" class="button-solid" data-submit="...Envoi en cours">Soumettre</button>
+                    </p>
+                </form>
+            </div>
+            <div class="contact-right">
+                <div class="info-group">
+                    <span class="heading">Localisation</span>
+                    <span class="info">Quelque part, Maroc</span>
+                </div>
+                <div class="info-group">
+                    <span class="heading">Téléphone</span>
+                    <a class="info" href="tel:555-213-9120">(555) 213-9120</a>
+                </div>
+                <div class="info-group">
+                    <span class="heading">Email</span>
+                    <a class="info" href="mailto:info@email.com">info@email.com</a>
+                </div>
+                <div class="info-group">
+                    <span class="heading">Horaires</span>
+                    <span class="info last">Du Lundi au Samedi : 9h à 19h</span>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+
+    <!-- ============================================ -->
+    <!--                     FOOTER                   -->
+    <!-- ============================================ -->
+
+    <footer id="footer">
+        <div class="container">
+          <div class="left-section">
+            <a class="logo" href="./index.html"
+              ><img
+                src="./images/eagle_light.png"
+                alt="logo clinique"
+                width="293"
+                height="91"
+            /></a>
+            <p>
+              Société multi-services avec une expertise en nettoyage et jardinage.
+              Notre objectif est la satisfaction totale de notre clientèle, avec
+              des prestations adaptées à vos besoins.
+            </p>
+          </div>
+          <div class="right-section">
+            <div class="lists">
+              <ul>
+                <li><h2>Entreprise</h2></li>
+                <li><a href="./index.html">Accueil</a></li>
+                <li><a href="./about.html">À Propos</a></li>
+                <li><a href="./contact.html">Services</a></li>
+              </ul>
+              <ul>
+                <li><h2>Support</h2></li>
+                <li><a href="./contact.html">Contactez-nous</a></li>
+              </ul>
+              <ul>
+                <li><h2>Contactez-nous</h2></li>
+                <li>
+                  <img
+                    loading="lazy"
+                    decoding="async"
+                    src="./images/pin.svg"
+                    alt=""
+                    width="24"
+                    height="24"
+                  /><a href="" target="_blank">Quelque part, Maroc</a>
+                </li>
+                <li>
+                  <img
+                    loading="lazy"
+                    decoding="async"
+                    src="./images/footer-phone.svg"
+                    alt=""
+                    width="24"
+                    height="24"
+                  /><a href="tel:555-213-9120">(555) 213-9120</a>
+                </li>
+                <li>
+                  <img
+                    loading="lazy"
+                    decoding="async"
+                    src="./images/email.svg"
+                    alt=""
+                    width="24"
+                    height="24"
+                  /><a href="mailto:info@email.com">info@email.com</a>
+                </li>
+              </ul>
+            </div>
+  
+            <div class="buttons">
+              <a class="button-solid" href="./contact.html"> Contactez-nous </a>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+    <script>
+        var ba = ["MSIE","Trident","Edge"];
+        var b, ua = navigator.userAgent;
+        for(var i=0; i < ba.length; i++){
+            if( ua.indexOf(ba[i]) > -1 ){
+                b = ba[i];
+                break;
+            }
+        }
+        if(b == "MSIE" || b == "Trident" || b == "Edge"){
+            b = "Internet Explorer";
+            alert("You are using the " + b + " browser and this browser is incompatible with this website and many others.  Please open this page in a different browser, either Chrome or Firefox.  Thank you!");
+        }
+    </script>
+
+    <script defer src="./app.js"></script>
+</body>
+</html>
